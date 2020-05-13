@@ -223,7 +223,7 @@ export default {
     reqParam.pageSize = 1500;
 
     reqParam.filter = objToRsql(this.queryParams);
-
+    reqParam.sortField = 'orderNum'
     this.loading = true;
 
     this.$graphql(initMenPages,{request:{...reqParam}}).then(

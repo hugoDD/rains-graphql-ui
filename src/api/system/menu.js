@@ -7,7 +7,7 @@ import { menuBaseMutation, menuPages, menuTree } from '../../operation/menuQuery
 export function listMenu(query) {
   const reqParam = Object.create(requestParam);
   reqParam.pageSize = 1500;
-
+  reqParam.sortField = 'orderNum'
   reqParam.filter = objToRsql(query);
   return graphqlRequest.graphql(menuPages,{request:reqParam})
   // return request({

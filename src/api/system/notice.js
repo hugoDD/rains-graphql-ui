@@ -8,7 +8,7 @@ export function listNotice(query) {
 
 // 查询公告详细
 export function getNotice(noticeId) {
-  return getOne('noticeId',noticeId,notePageQuery)
+  return getOne(noticeId,notePageQuery)
 }
 
 // 新增公告

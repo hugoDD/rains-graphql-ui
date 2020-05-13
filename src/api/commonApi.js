@@ -12,9 +12,9 @@ export function listQuery(query,graphqlQuery,dateField) {
 }
 
 // 查询字典类型详细
-export function getOne(idName,idValue,graphqlQuery) {
+export function getOne(idValue,graphqlQuery) {
   const req = Object.create(requestParam)
-  req.filter = `${idName}==${idValue}`
+  req.ids = [idValue]
   return graphqlRequest.graphql(graphqlQuery,{request:req})
 
 }
