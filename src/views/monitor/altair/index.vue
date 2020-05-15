@@ -5,10 +5,10 @@
 </template>
 <script>
 export default {
-  name: "Druid",
+  name: "Altair",
   data() {
     return {
-      src: process.env.VUE_APP_BASE_API+"/monitor",
+      src: process.env.VUE_APP_BASE_API+"/altairui",
       height: document.documentElement.clientHeight - 94.5 + "px;",
       loading: true
     };
